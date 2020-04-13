@@ -1,19 +1,19 @@
 <%- include("partials/header.ejs") %>
     <div class="container">
-        <div class="thumbnail">
+        <div class="img-thumbnail form-div">
             <h3>NEW-BLOG</h3>
             <form action="/blogs" method="POST">
                 <div class="form-group">
-                    <label for="title">TITLE</label>
+                    <label for="title">TITLE</label><br>
                     <input type="text" class="form-controls" id="title" name="title">
                 </div>
                 <div class="form-group">
-                    <label for="imageinput">IMAGE LINK</label>
+                    <label for="imageinput">IMAGE LINK</label><br>
                     <input type="text" class="form-controls" id="imageinput" name="imagevalue">
                 </div>
                 <div class="form-group">
-                    <label for="infobody">MORE INFO GOES HERE</label>
-                    <textarea class="form-control" id="infobody" rows="4" name="infovalue" placeholder="type info here..."></textarea>
+                    <label for="infobody">MORE INFO GOES HERE</label><br>
+                    <textarea class="form-control" id="infobody" rows="4"  name="infovalue" placeholder="type info here..."></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>
