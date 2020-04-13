@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+<h1>DOGS PAGE</h1>
+
+<ul>
+  <%  blogs.forEach(function(blog){ %>
+        <div class="thumbnail">
+            <h3><%= blog.title %> -- created: <span><%= blog.created.toDateString() %> </span></h3>
+            <figure>
+                <img src="<%= blog.image %>" alt="Blogpost-image" width="50%" height="50%">
+                <figcaption><%= blog.body.substring(0,40) %>...</figcaption>
+            </figure>
+            <button type="button" class="btn btn-info"><a href="/blogs/<%= blog._id %>">More Info</a></button>
+        </div>
+   <% }); %>
+</ul>
+
+<%- include("partials/footer.ejs") %>

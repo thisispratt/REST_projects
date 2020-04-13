@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+<div>
+    <h1><%= blog.title %></h1>
+    <h4>Created on: <%= blog.created.toDateString() %></h4>
+    <img src="<%= blog.image %>" alt="blog-image">
+
+    <p> <%- blog.body%></p>
+    <a  class="btn btn-info"href="/blogs/<%= blog.id %>/edit">EDIT</a>
+    <form id="delete" action="/blogs/<%= blog.id %>?_method=DELETE" method="POST">
+    <button class="btn btn-danger">DELETE</button>
+    </form>
+</div>
+
+<%- include("partials/footer.ejs") %>
