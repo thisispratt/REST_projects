@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+    <h1>ALL-CATS</h1>
+        <div class="row">
+            <% cats.forEach(function(cat){ %>
+                <div class="col">
+                    <h2>
+                       <%= cat.title %>
+                    </h2>
+                    <figure>
+                        <img src="<%= cat.image %>" alt="cat-image">
+                        <figcaption><%= cat.info.substring(0,40) %>...</figcaption>
+                    </figure>
+
+                    <a class="btn btn-info" href="/cats/<%= cat._id %>">Show more</a>
+                </div>
+            <% }); %>
+        </div>
+<%- include("partials/footer.ejs") %>

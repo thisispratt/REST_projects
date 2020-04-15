@@ -1,0 +1,20 @@
+    <%- include("partials/header.ejs") %>
+    <div class="container">
+        <h1>Cat-FORM</h1>
+        <form action="/cats" method="POST">
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" class="form-control" id="title" name="titlevalue">
+            </div>
+            <div class="form-group">
+                <label for="form-img">Image-URL</label>
+                <input type="text" class="form-control" id="form-img" name="imagevalue">
+            </div>
+            <div class="form-group">
+                <label for="info">Info about this Cat</label>
+                <textarea class="form-control" id="info" rows="3" name="infovalue"></textarea>
+            </div>
+            <button class="btn btn-info btn-lg" type="submit">SUBMIT</button>
+        </form> 
+    </div>
+<%- include("partials/footer.ejs") %>
