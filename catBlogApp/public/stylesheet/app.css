@@ -1,0 +1,30 @@
+.centered{
+    text-align: center;
+}
+.index-entry{
+    width: 60%;
+    height: auto;
+    margin-top: 2vw;
+}
+.index-img{
+    width: 40%;
+    height: auto;
+}
+.index-container{
+    width: 60%;
+}
+.show-img{
+    width: 100%;
+}
+.show-img-container{
+    width: 50vw;
+    height: auto;
+}
+.inline-buttons{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.margin-l{
+    margin-left: 4px;
+}
