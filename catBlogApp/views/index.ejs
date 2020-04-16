@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs") %>
+     <div class="container index-container">
+        <h1 class="centered">ALL-CATS</h1>
+            <div class="row">
+                <% cats.forEach(function(cat){ %>
+                    <div class="col-sm-12 ">
+                        <div class="index-entry card">
+                            <h2 class="card-title">    
+                               <%= cat.title %>
+                            </h2>
+                            <figure>
+                                <img class="index-img" src="<%= cat.image %>" alt="cat-image">
+                                <figcaption class="card-text"><%= cat.info.substring(0,40) %>...</figcaption>
+                            </figure>
+
+                            <a class="btn btn-info" href="/cats/<%= cat._id %>">Show more</a>
+                        </div>
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+<%- include("partials/footer.ejs") %>
