@@ -1,6 +1,7 @@
 var express = require("express");
 var app = express();
 
+app.use(express.static('public'));
 //to make req.body object and retrieve the data from the form.
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
