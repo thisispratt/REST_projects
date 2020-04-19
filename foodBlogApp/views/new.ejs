@@ -1,0 +1,22 @@
+    <%- include("partials/header.ejs") %>
+        <div class="container">
+            <h1>ADD NEW FOOD ITEM</h1>
+
+            <form action="/foods" method="POST">
+                <div class="form-group">
+                  <label for="Name">Name</label>
+                  <input type="text" class="form-control" id="name" name="namevalue">
+                </div>
+                <div class="form-group">
+                    <label for="form-img">Image-URL</label>
+                    <input type="text" class="form-control" id="form-img" name="imagevalue">
+                </div>
+                <div class="form-group">
+                    <label for="foodInfo">Description about the food</label>
+                    <textarea class="form-control" id="foodInfo" rows="3" name="infovalue"></textarea>
+                </div>
+                <button class="btn btn-info btn-lg" type="submit">SUBMIT</button>
+            </form> 
+        </div>
+
+    <%- include("partials/footer.ejs") %>
