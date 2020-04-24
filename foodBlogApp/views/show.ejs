@@ -1,13 +1,15 @@
 <%- include("partials/header.ejs") %>
     <div class="container">
-        <h1><%= foodItem.name %></h1>
-        <figure>
-            <img src="<%=foodItem.image %>" alt="food-image">
-            <figcaption><%= foodItem.info %></figcaption>
-        </figure>
-        <a class="btn btn-info" href="/foods/<%= foodItem._id %>/edit">EDIT</a>
-        <form action="/foods/<%= foodItem._id %>?_method=DELETE" method="POST">
-            <button class="btn btn-danger" type="submit">DELETE</button>
-        </form>
+        <div class="show-container" > 
+            <h1><%= foodItem.name %></h1>
+            <figure>
+                <img class="show-image" src="<%=foodItem.image %>" alt="food-image">
+                <figcaption><%= foodItem.info %></figcaption>
+            </figure>
+            <a class="btn btn-info" href="/foods/<%= foodItem._id %>/edit">EDIT</a>
+            <form action="/foods/<%= foodItem._id %>?_method=DELETE" method="POST">
+                <button class="btn btn-danger" type="submit">DELETE</button>
+            </form>
+        </div>
     </div>
 <%- include("partials/footer.ejs") %>

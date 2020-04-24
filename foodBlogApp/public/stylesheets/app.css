@@ -1,0 +1,26 @@
+.index-entry{
+    width: 60%;
+    margin: 0 auto;
+}
+.fig-container{
+    width: 50%;
+    margin: 0 auto;
+}
+.index-image{
+    width: 100%;
+    height: auto;
+}
+.show-image{
+    max-width: 100%;
+}
+.img-thumbnail{
+    margin-bottom: 1.5vw;
+}
+.form-container{
+    width: 60%;
+    margin: 0 auto;
+}
+.show-container{
+    width: 80%;
+    margin: 0 auto;
+}

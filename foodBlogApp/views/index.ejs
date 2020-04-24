@@ -3,13 +3,17 @@
         <h1>FOOD-ITEMS</h1>
             <div class="row">
         <% foodItems.forEach(function(food){ %>
-            <div class="col-sm">
-                <h2><%= food.name %></h2>
-                <figure>
-                <img src="<%= food.image %>" alt="food-image">
-                <figcaption><%= food.info.substring(0,20)+ "..." %></figcaption>
-                </figure>
-                <a href="/foods/<%= food._id %>"+ </a>SHOW MORE</a>
+            <div class="col-sm-12">
+                <div class="index-entry">
+                    <div class="fig-container img-thumbnail">
+                        <h2><%= food.name %></h2>
+                        <figure>
+                        <img class="index-image" src="<%= food.image %>" alt="food-image">
+                        <figcaption><%= food.info.substring(0,20)+ "..." %></figcaption>
+                        </figure>
+                        <a href="/foods/<%= food._id %>"+ </a>SHOW MORE</a>
+                    </div>
+                </div>
             </div>
         <% }); %>
             </div>
